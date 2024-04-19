@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Altera o layout para coluna */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid #f2f2f2;
+}
+
+.input-group {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: gray;
+}
+
+.pacientes-table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 10px; /* Adiciona espaçamento entre o grupo de entrada e a tabela */
+}
+
+.pacientes-table th, .pacientes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.pacientes-table th {
+  background-color: #f2f2f2;
+}
+
+.pacientes-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.pacientes-table tr:hover {
+  background-color: #ddd;
+}
