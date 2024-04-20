@@ -1,10 +1,10 @@
 export interface Paciente
 {
-    id: number,
+    id?: number,
     name: '',
-    birthDate: '',
+    birthDate: string,
     cpf: '',
     gender: '',
-    adress: '',
+    address: '',
     status: true
 }

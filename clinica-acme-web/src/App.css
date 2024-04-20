@@ -8,6 +8,9 @@
 }
 
 .input-group {
+  display: flex; /* Altera o layout para linha */
+  justify-content: space-between; /* Alinha os elementos à esquerda e à direita */
+  align-items: center; /* Centraliza verticalmente os elementos */
   width: 50%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -36,4 +39,120 @@
 
 .pacientes-table tr:hover {
   background-color: #ddd;
+}
+
+.buttons-grid {
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+}
+
+.create-button{
+  background-color: #32cd32; /* Verde */
+}
+.delete-button {
+  background-color: #ff6347; /* Vermelho */
+
+}
+
+.edit-button {
+  background-color: #4169e1; /* Azul */
+
+}
+
+.view-button {
+  background-color: black;
+}
+
+.create-button,
+.delete-button,
+.edit-button,
+.view-button {
+  margin-left: 10px; /* Adiciona espaço entre os botões */
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* CSS para o modal */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+  background-color: white;
+  margin: 10% auto; /* Centraliza verticalmente */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Largura do modal */
+  max-width: 600px; /* Largura máxima */
+}
+
+/* Botão para fechar o modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos adicionais para o formulário */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 40px;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+tr:focus {
+  background-color: yellow;
 }
